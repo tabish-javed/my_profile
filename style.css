@@ -6,16 +6,18 @@
 
 :root {
   --dark-gray: #495057;
+  --medium-gray: #868e96;
   --light-gray: #ced4da;
   --black: #000000;
   --white: #ffffff;
   --background-color: #e3fafc;
-  --title-font: 'Bree Serif', serif;
+  --body-font: 'Bree Serif', serif;
+  --other-font: 'Inter', sans-serif;
 }
 
 body {
-  margin-top: 2%;
-  font-family: 'Inter', sans-serif;
+  margin-top: 4rem;
+  font-family: var(--body-font);
   color: var(--dark-gray);
   font-size: 18px;
 }
@@ -26,8 +28,7 @@ body {
 }
 
 header {
-  margin-bottom: 4rem;
-  font-family: var(--title-font);
+  margin-bottom: 6rem;
 }
 
 header p {
@@ -37,29 +38,42 @@ header p {
 
 header a {
   text-decoration: none;
-  color: var(--dark-gray);
+  color: var(--medium-gray);
+}
+
+h1 {
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px var(--dark-gray);
+}
+
+.phone-email {
+  margin-top: 0.5rem;
+  color: var(--medium-gray);
+  text-decoration: none;
 }
 
 .title-header {
   display: flex;
-  align-items: center;
   justify-content: start;
-  margin-bottom: 1%
 }
 
 .title {
   margin-left: 3rem;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: var(--dark-gray);
-  text-shadow: 1px 1px 2px var(--dark-gray);
-}
-
 .profile_photo {
-  width: 6rem;
+  width: 8rem;
   height: auto;
   border-radius: 50%;
   filter: drop-shadow(0 0 0.40rem var(--dark-gray));
+}
+
+.summary {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.summary p {
+  margin-bottom: 2rem;
 }
