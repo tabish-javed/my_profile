@@ -5,7 +5,8 @@
 }
 
 :root {
-  --text-color: #495057;
+  --dark-gray: #495057;
+  --light-gray: #ced4da;
   --black: #000000;
   --white: #ffffff;
   --background-color: #e3fafc;
@@ -15,8 +16,7 @@
 body {
   margin-top: 2%;
   font-family: 'Inter', sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
+  color: var(--dark-gray);
   font-size: 18px;
 }
 
@@ -26,22 +26,40 @@ body {
 }
 
 header {
-  width: 30%;
+  margin-bottom: 4rem;
+  font-family: var(--title-font);
+}
+
+header p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+.title-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2%
+  justify-content: start;
+  margin-bottom: 1%
+}
+
+.title {
+  margin-left: 3rem;
 }
 
 h1 {
-  font-family: var(--title-font);
-  font-size: 32px;
-  color: var(--text-color);
+  font-size: 2.5rem;
+  color: var(--dark-gray);
+  text-shadow: 1px 1px 2px var(--dark-gray);
 }
 
 .profile_photo {
-  width: 20%;
+  width: 6rem;
   height: auto;
   border-radius: 50%;
-  filter: drop-shadow(0 0 0.35rem gray);
+  filter: drop-shadow(0 0 0.40rem var(--dark-gray));
 }
