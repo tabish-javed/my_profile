@@ -8,6 +8,7 @@
   --dark-gray: #495057;
   --medium-gray: #868e96;
   --light-gray: #ced4da;
+  --light-theme: #e6fcf5;
   --black: #000000;
   --white: #ffffff;
   --background-color: #e3fafc;
@@ -41,8 +42,8 @@ header a {
 }
 
 h1 {
-  font-size: 1.8rem;
-  text-shadow: 1px 1px 2px var(--dark-gray);
+  font-size: 2rem;
+  /* text-shadow: 1px 1px 2px var(--dark-gray); */
 }
 
 .phone-email {
@@ -53,11 +54,12 @@ h1 {
 
 .title-header {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .title {
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .profile_photo {
@@ -71,6 +73,8 @@ h1 {
   width: 90%;
   margin: 0 auto;
   line-height: 1.6;
+  padding: 2rem;
+  background-color: var(--light-theme);
 }
 
 .summary p {
