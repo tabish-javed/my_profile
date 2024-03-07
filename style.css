@@ -19,7 +19,6 @@ body {
   margin-top: 4rem;
   font-family: var(--body-font);
   color: var(--dark-gray);
-  font-size: 18px;
 }
 
 .container {
@@ -32,7 +31,7 @@ header {
 }
 
 header p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -42,7 +41,7 @@ header a {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-shadow: 1px 1px 2px var(--dark-gray);
 }
 
@@ -75,5 +74,5 @@ h1 {
 }
 
 .summary p {
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
 }
