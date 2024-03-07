@@ -9,6 +9,7 @@
   --medium-gray: #868e96;
   --light-gray: #ced4da;
   --light-theme: #e6fcf5;
+  --dark-theme: #087f5b;
   --black: #000000;
   --white: #ffffff;
   --background-color: #e3fafc;
@@ -17,18 +18,26 @@
 }
 
 body {
-  margin-top: 4rem;
   font-family: var(--body-font);
   color: var(--dark-gray);
+  background-color: var(--light-theme);
 }
 
 .container {
   width: 70%;
-  margin: 0 auto;
+  margin: 4rem auto 0 auto;
+}
+
+.icon {
+  margin-top: -6rem;
+  width: 32px;
+  height: 32px;
+  fill: var(--dark-gray);
+  transform: skewX(-10deg);
 }
 
 header {
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
 header p {
@@ -46,8 +55,11 @@ h1 {
   /* text-shadow: 1px 1px 2px var(--dark-gray); */
 }
 
+.name {
+  color: var(--dark-theme);
+}
+
 .phone-email {
-  margin-top: 0.5rem;
   color: var(--medium-gray);
   text-decoration: none;
 }
@@ -59,11 +71,16 @@ h1 {
 }
 
 .title {
+  height: 7rem;
   margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .profile_photo {
-  width: 8rem;
+  width: 7rem;
   height: auto;
   border-radius: 50%;
   filter: drop-shadow(0 0 0.40rem var(--dark-gray));
@@ -73,10 +90,12 @@ h1 {
   width: 90%;
   margin: 0 auto;
   line-height: 1.6;
-  padding: 2rem;
-  background-color: var(--light-theme);
 }
 
 .summary p {
   margin-bottom: 1.2rem;
+}
+
+.summary p:last-child {
+  margin-bottom: 0;
 }
