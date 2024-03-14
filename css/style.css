@@ -12,3 +12,36 @@ html {
 body {
   font-family: sans-serif;
 }
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: center;
+  justify-items: center;
+  background-image: linear-gradient(rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.6)), url('../images/hero-background.jpg');
+  background-size: cover;
+}
+
+.heading-primary {
+  font-size: 4rem;
+  color: orange;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-img-box {
+  max-width: 100%;
+  text-align: center;
+}
+
+.hero-img {
+  max-width: 70%;
+  border-radius: 50%;
+  filter: grayscale(50%);
+}
+
+/* 227, 120, 154 */
