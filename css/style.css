@@ -22,10 +22,6 @@ body {
   color: var(--font-color);
 }
 
-.section-hero {
-  background-color: #ced4da;
-}
-
 .hero {
   max-width: 1200px;
   margin: 0 auto;
@@ -35,7 +31,7 @@ body {
   gap: 4rem;
   align-items: center;
   justify-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/hero-background.jpg');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8)), url('../images/hero-background.jpg');
   background-size: cover;
 }
 
