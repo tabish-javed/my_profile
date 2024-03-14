@@ -52,9 +52,8 @@ body {
 }
 
 .btn:link, .btn:visited {
-  margin-top: 5rem;
+  margin-top: 12rem;
   display: inline-block;
-  /* color: var(--font-color); */
   color: #dee2e6;
   background-color: var(--brand-color);
   text-decoration: none;
@@ -83,9 +82,7 @@ body {
 }
 
 .hero-img {
-  max-width: 70%;
+  max-width: 75%;
   border-radius: 50%;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
-
-/* 227, 120, 154 */
