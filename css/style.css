@@ -2,8 +2,9 @@
 
 :root {
   --brand-font: 'M PLUS Code Latin', sans-serif;
+  --brnad-font-size: 1.6rem;
   --brand-color: #2b8a3e;
-  --font-color: #495057;
+  --brand-font-color: #495057;
 }
 
 * {
@@ -20,7 +21,7 @@ html {
 
 body {
   font-family: var(--brand-font);
-  color: var(--font-color);
+  color: var(--brand-font-color);
 }
 
 /* ---- GENERAL REUSABLE ---- */
@@ -34,7 +35,7 @@ body {
   color: #dee2e6;
   background-color: var(--brand-color);
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: var(--brnad-font-size);
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: 5px;
@@ -71,8 +72,8 @@ body {
 
 .nav-link:link, .nav-link:visited {
   text-decoration: none;
-  color: var(--font-color);
-  font-size: 1.6rem;
+  color: var(--brand-font-color);
+  font-size: var(--brnad-font-size);
   font-weight: 500;
   padding: 0.4rem 0.8rem;
   border-radius: 0.4rem;
@@ -139,8 +140,30 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  margin: 0 auto;
+  margin: 0 auto 6rem;
   padding: 4rem;
-  font-size: 1.5rem;
+  font-size: var(--brnad-font-size);
   line-height: 2;
+}
+
+/* ---- COMPANY LOGOS ---- */
+.company-logos {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.company-logos img {
+  width: 8rem;
+  filter: grayscale(100%);
+  transition: all .2s;
+}
+
+.company-logos img:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
 }
