@@ -59,7 +59,27 @@ body {
 .logo {
   width: 5rem;
   height: 5rem;
-  filter: invert(28%) sepia(8%) saturate(683%) hue-rotate(169deg) brightness(97%) contrast(87%) drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.2));
+  filter: invert(28%) sepia(8%) saturate(683%) hue-rotate(169deg) brightness(97%) contrast(87%);
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.nav-link:link, .nav-link:visited {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.nav-link:hover, .nav-link:active {
+  color: var(--brand-color);
+  transition: all .2s;
 }
 
 /* ---- HERO ---- */
