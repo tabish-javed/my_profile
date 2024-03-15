@@ -70,6 +70,7 @@ body {
 
 .nav-link:link, .nav-link:visited {
   text-decoration: none;
+  color: var(--font-color);
   font-size: 1.6rem;
   font-weight: 500;
   padding: 0.4rem 0.8rem;
