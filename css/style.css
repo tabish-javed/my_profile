@@ -15,6 +15,7 @@
 html {
   /* reset default font size to 10px */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -24,8 +25,8 @@ body {
 
 /* ---- GENERAL REUSABLE ---- */
 .heading-primary {
-  font-size: 7rem;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-size: 6rem;
+  text-shadow: 0 0 .5rem rgba(0, 0, 0, 0.5);
 }
 
 .btn:link, .btn:visited {
@@ -42,7 +43,7 @@ body {
 
 .btn:hover, .btn:active {
   transform: translateY(-3px);
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.5);
 }
 
 /* ---- HEADER ---- */
@@ -57,8 +58,8 @@ body {
 }
 
 .logo {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   filter: invert(28%) sepia(8%) saturate(683%) hue-rotate(169deg) brightness(97%) contrast(87%);
 }
 
@@ -88,7 +89,7 @@ body {
   background-size: cover;
   box-shadow: inset 0 0 5rem rgba(255, 255, 255, 255);
   background-blend-mode: overlay;
-  padding: 16rem 0 10rem 0;
+  padding: 12rem 0 6rem 0;
   margin-bottom: 6rem;
 }
 
@@ -130,7 +131,7 @@ body {
 .hero-img {
   max-width: 80%;
   border-radius: 50%;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.5);
 }
 
 .summary {
