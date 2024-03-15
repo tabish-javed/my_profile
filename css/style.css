@@ -146,6 +146,13 @@ body {
   line-height: 2;
 }
 
+.quote {
+  width: 3rem;
+  height: 3rem;
+  transform: rotate(190deg);
+  filter: invert(28%) sepia(8%) saturate(683%) hue-rotate(169deg) brightness(97%) contrast(87%);
+}
+
 /* ---- COMPANY LOGOS ---- */
 .company-logos {
   max-width: 500px;
