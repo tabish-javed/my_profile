@@ -22,37 +22,13 @@ body {
   color: var(--font-color);
 }
 
-.section-hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('../images/hero-background.jpg');
-  background-size: cover;
-  box-shadow: inset 0 0 5rem rgba(255, 255, 255, 255);
-  background-blend-mode: overlay;
-}
-
-.hero {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10rem 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
-  align-items: center;
-  justify-items: center;
-}
-
-.hero-txt-box p {
-  font-size: 1.6rem;
-  font-weight: 500;
-  text-align: center;
-}
-
-.designation-span {
-  color: var(--brand-color);
-  font-style: italic;
+/* ---- GENERAL REUSABLE ---- */
+.heading-primary {
+  font-size: 7rem;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
 .btn:link, .btn:visited {
-  margin-top: 12rem;
   display: inline-block;
   color: #dee2e6;
   background-color: var(--brand-color);
@@ -69,9 +45,60 @@ body {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
-.heading-primary {
-  font-size: 6rem;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+/* ---- HEADER ---- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  padding: 0 4.8rem;
+  position: fixed;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  filter: invert(28%) sepia(8%) saturate(683%) hue-rotate(169deg) brightness(97%) contrast(87%);
+}
+
+/* ---- HERO ---- */
+.section-hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('../images/hero-background.jpg');
+  background-size: cover;
+  box-shadow: inset 0 0 5rem rgba(255, 255, 255, 255);
+  background-blend-mode: overlay;
+  padding: 16rem 0 10rem 0;
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero-txt-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+  gap: 20rem;
+}
+
+.hero-txt-box p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.designation-span {
+  color: var(--brand-color);
+  font-style: italic;
 }
 
 .hero-img-box {
@@ -80,7 +107,7 @@ body {
 }
 
 .hero-img {
-  max-width: 75%;
+  max-width: 80%;
   border-radius: 50%;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
