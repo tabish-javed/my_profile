@@ -3,7 +3,8 @@
 :root {
   --brand-font: 'M PLUS Code Latin', sans-serif;
   --brnad-font-size: 1.6rem;
-  --brand-color: #2b8a3e;
+  --brand-color-dark: #2b8a3e;
+  --brand-color-light: #37b24d;
   --brand-font-color: #495057;
 }
 
@@ -33,7 +34,7 @@ body {
 .btn:link, .btn:visited {
   display: inline-block;
   color: #dee2e6;
-  background-color: var(--brand-color);
+  background-color: var(--brand-color-dark);
   text-decoration: none;
   font-size: var(--brnad-font-size);
   font-weight: 600;
@@ -43,6 +44,7 @@ body {
 }
 
 .btn:hover, .btn:active {
+  background-color: var(--brand-color-light);
   transform: translateY(-3px);
   box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.5);
 }
@@ -52,10 +54,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 8rem;
-  padding: 0 6.4rem;
+  width: 96%;
+  height: 5rem;
+  padding: 0 2rem;
   position: fixed;
+  /* background-color: var(--brand-color-dark); */
+  border: solid 1rem transparent;
+  border-radius: 1rem;
+  margin: 1rem 2% 0 2%;
+  transition: all 1s;
+}
+
+.scrolled {
+  background-color: var(--brand-color-light);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
 }
 
 .logo {
@@ -80,7 +96,7 @@ body {
 }
 
 .nav-link:hover, .nav-link:active {
-  color: var(--brand-color);
+  color: var(--brand-color-dark);
   transition: all .2s;
 }
 
@@ -120,7 +136,7 @@ body {
 }
 
 .designation-span {
-  color: var(--brand-color);
+  color: var(--brand-color-dark);
   font-style: italic;
 }
 
@@ -146,13 +162,12 @@ body {
   line-height: 2;
 }
 
-.quote {
+/* .quote {
   width: 3rem;
   height: 3rem;
   transform: rotate(190deg);
   filter: invert(28%) sepia(8%) saturate(683%) hue-rotate(169deg) brightness(97%) contrast(87%);
-}
-
+} */
 /* ---- COMPANY LOGOS ---- */
 .company-logos {
   max-width: 500px;
@@ -162,6 +177,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
+  margin-bottom: 6rem;
 }
 
 .company-logos img {
