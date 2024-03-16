@@ -6,6 +6,7 @@
   --brand-color-dark: #2b8a3e;
   --brand-color-light: #37b24d;
   --brand-font-color: #495057;
+  --brand-light-gray: #dee2e6;
 }
 
 * {
@@ -33,7 +34,7 @@ body {
 
 .btn:link, .btn:visited {
   display: inline-block;
-  color: #dee2e6;
+  color: var(--brand-light-gray);
   background-color: var(--brand-color-dark);
   text-decoration: none;
   font-size: var(--brnad-font-size);
