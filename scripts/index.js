@@ -1,17 +1,25 @@
 'use strict'
 
+const header = document.querySelector('header')
+const navLinks = document.querySelectorAll('.nav-link')
+
 function onScroll () {
-  const header = document.querySelector('header')
   window.addEventListener('scroll', () => {
-    if (window.scrollY < 2) {
-      header.classList.remove('hidden')
+    if (window.scrollY >= 2) {
+      header.classList.add('scrolled')
+      navLinks.forEach(link => {
+        link.classList.add('nav-on-scroll')
+      })
+    } else {
+      header.classList.remove('scrolled')
+      navLinks.forEach(link => {
+        link.classList.remove('nav-on-scroll')
+      })
     }
-    window.scrollY >= 2 ? header.classList.add('scrolled') : header.classList.remove('scrolled')
     // setTimeout(() => {
     //   header.classList.add('hidden')
-    // }, 1_000 * 2)
+    // }, 1000 * 2)
   })
 }
-
 
 onScroll()

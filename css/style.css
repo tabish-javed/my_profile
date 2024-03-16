@@ -68,11 +68,16 @@ body {
 
 .scrolled {
   background-color: var(--brand-color-light);
+  opacity: 0.95;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 
-.hidden {
-  display: none;
+.nav-on-scroll:link, .nav-on-scroll:visited {
+  color: var(--brand-light-gray) !important;
+}
+
+.nav-on-scroll:hover, .nav-on-scroll:active {
+  color: var(--brand-font-color) !important;
 }
 
 .logo {
@@ -97,7 +102,7 @@ body {
 }
 
 .nav-link:hover, .nav-link:active {
-  color: var(--brand-color-dark);
+  color: var(--brand-color-light);
   transition: all .2s;
 }
 
@@ -182,7 +187,7 @@ body {
 }
 
 .company-logos img {
-  width: 8rem;
+  width: 7rem;
   filter: grayscale(100%);
   transition: all .2s;
 }
