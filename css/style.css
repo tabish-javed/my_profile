@@ -7,6 +7,7 @@
   --brand-color-light: #37b24d;
   --brand-font-color: #495057;
   --brand-light-gray: #dee2e6;
+  --brand-light-medium-gray: #ced4da;
   --brand-medium-gray: #adb5bd;
   --brand-default-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
@@ -200,7 +201,7 @@ body {
 } */
 /* ---- CAREER SECTION ---- */
 .career {
-  max-width: 100rem;
+  max-width: 120rem;
   margin: 0 auto;
   display: flex;
   margin-bottom: 6rem;
@@ -220,13 +221,14 @@ body {
 }
 
 .company-logos {
-  max-width: 70%;
+  max-width: 80%;
   height: 4rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   align-items: center;
+  justify-items: center;
   gap: 4rem;
   row-gap: 0;
 }
@@ -235,8 +237,13 @@ body {
   display: flex;
   flex-direction: column;
   align-self: start;
+  padding: 0.2rem;
+  background-color: var(--brand-light-medium-gray);
+}
+
+.invisible {
+  width: 110px;
   padding: 2px;
-  background-color: var(--brand-color-dark);
 }
 
 .company-logos img {
