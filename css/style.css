@@ -41,6 +41,7 @@ body {
   text-decoration: none;
   font-size: var(--brnad-font-size);
   font-weight: 600;
+  letter-spacing: 1px;
   padding: 1rem 2rem;
   border-radius: 5px;
   transition: all .2s;
@@ -52,9 +53,23 @@ body {
   box-shadow: var(--brand-default-shadow);
 }
 
+.btn-cv:link, .btn-cv:visited {
+  margin-left: 2rem;
+  background-color: transparent;
+  color: var(--brand-font-color);
+  letter-spacing: 1px;
+  box-shadow: inset 0 0 0 3px var(--brand-light-gray);
+}
+
+.btn-cv:hover, .btn-cv:active {
+  color: var(--brand-light-gray);
+  background-color: var(--brand-color-light);
+  box-shadow: 0 0 0 0;
+}
+
 .icon {
   width: 2.4rem;
-  fill: var(--brand-color-dark);
+  fill: var(--brand-color-light);
 }
 
 /* ---- HEADER ---- */
@@ -90,7 +105,7 @@ body {
 .logo {
   width: 4rem;
   height: 4rem;
-  filter: invert(28%) sepia(8%) saturate(683%) hue-rotate(169deg) brightness(97%) contrast(87%);
+  fill: var(--brand-font-color);
 }
 
 .main-nav-list {
@@ -184,11 +199,11 @@ body {
 } */
 /* ---- CAREER SECTION ---- */
 .career {
-  max-width: 70%;
+  max-width: 100rem;
   margin: 0 auto;
   display: flex;
   margin-bottom: 6rem;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .heading-box {
@@ -204,12 +219,23 @@ body {
 }
 
 .company-logos {
-  max-width: 50%;
+  max-width: 70%;
+  height: 4rem;
   margin: 0 auto;
-  display: flex;
-  gap: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   align-items: center;
-  justify-content: center;
+  gap: 4rem;
+  row-gap: 0;
+}
+
+.underline {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  padding: 2px;
+  background-color: var(--brand-color-dark);
 }
 
 .company-logos img {
@@ -222,4 +248,8 @@ body {
 .company-logos img:hover {
   filter: grayscale(0%) drop-shadow(var(--brand-default-shadow));
   cursor: pointer;
+}
+
+.company-rnr {
+  display: inline-block;
 }

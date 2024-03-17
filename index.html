@@ -17,7 +17,12 @@
   <body>
     <header class="header">
       <a href="#" class="home">
-        <img src="icons/logo.svg" alt="Logo" class="logo">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+          <path fill="none"
+            d="M179.9 388l-76.16-132 76.16 132zM179.9 388h152.21l76.15-132-76.15-132H179.9l-76.16 132 76.16 132zM103.74 256l76.16-132-76.16 132z" />
+          <path d="M496 256L376 48H239.74l-43.84 76h136.21l76.15 132-76.15 132H195.9l43.84 76H376l120-208z" />
+          <path d="M179.9 388l-76.16-132 76.16-132 43.84-76H136L16 256l120 208h87.74l-43.84-76z" />
+        </svg>
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -36,7 +41,10 @@
               <h1 class="heading-primary">TABISH JAVED</h1>
               <p>Site Reliability Engineer <span class="designation-span">// Developer</span></p>
             </div>
-            <a href="#" class="btn">GET IN TOUCH</a>
+            <div>
+              <a href="#" class="btn">GET IN TOUCH</a>
+              <a href="files/Tabish_CV.pdf" download="Tabish_CV.pdf" target="_blank" class="btn btn-cv">DOWNLOAD CV</a>
+            </div>
           </div>
           <div class="hero-img-box">
             <img src="images/profile_photo.jpg" alt="Profile Photo" class="hero-img">
@@ -55,21 +63,35 @@
           service quality. Proven ability to lead seamless implementations and deliver next-generation technical
           solutions improving revenues, margins and productivity.</p>
       </section>
-      <section class="career" id="career">
-        <div class="heading-box">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
-            viewBox="0 0 256 256">
-            <path
-              d="M240,208H224V96a16,16,0,0,0-16-16H144V32a16,16,0,0,0-24.88-13.32L39.12,72A16,16,0,0,0,32,85.34V208H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM208,96V208H144V96ZM48,85.34,128,32V208H48ZM112,112v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm-32,0v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm0,56v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Zm32,0v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Z">
-            </path>
-          </svg>
-          <span class="heading-secondary">EXPERIENCE</span>
+      <section id="career">
+        <div class="career">
+          <div class="heading-box">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000"
+              viewBox="0 0 256 256">
+              <path
+                d="M240,208H224V96a16,16,0,0,0-16-16H144V32a16,16,0,0,0-24.88-13.32L39.12,72A16,16,0,0,0,32,85.34V208H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM208,96V208H144V96ZM48,85.34,128,32V208H48ZM112,112v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm-32,0v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm0,56v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Zm32,0v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Z">
+              </path>
+            </svg>
+            <span class="heading-secondary">EXPERIENCE</span>
+          </div>
+          <div class="company-logos">
+            <img src="images/Kyndryl.png" alt="Kyndryl">
+            <img src="images/IBM.png" alt="IBM">
+            <img src="images/CSC.png" alt="CSC">
+            <img src="images/Innodata.png" alt="Innodata">
+            <div class="underline"></div>
+            <div class="underline"></div>
+            <div class="underline"></div>
+            <div class="underline"></div>
+          </div>
         </div>
-        <div class="company-logos">
-          <img src="images/Kyndryl.png" alt="Kyndryl">
-          <img src="images/IBM.png" alt="IBM">
-          <img src="images/CSC.png" alt="CSC">
-          <img src="images/Innodata.png" alt="Innodata">
+        <div class="company-rnr">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          <ul>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, distinctio veritatis ea cumque
+              voluptate iure fuga, labore alias vel necessitatibus tenetur exercitationem obcaecati vitae sed numquam?
+              Rem quidem dolore praesentium?</li>
+          </ul>
         </div>
       </section>
     </main>
