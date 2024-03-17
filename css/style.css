@@ -225,7 +225,7 @@ body {
   height: 4rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 120px);
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
@@ -237,13 +237,8 @@ body {
   display: flex;
   flex-direction: column;
   align-self: start;
-  padding: 0.2rem;
+  padding: .1px 0.5rem;
   background-color: var(--brand-light-medium-gray);
-}
-
-.invisible {
-  width: 110px;
-  padding: 2px;
 }
 
 .company-logos img {
