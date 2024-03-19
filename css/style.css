@@ -107,6 +107,7 @@ body {
   border: solid 1rem transparent;
   border-radius: .5rem;
   margin: 1rem 2% 0 2%;
+  padding: 0 2rem;
   transition: all 1s;
 }
 
@@ -253,7 +254,7 @@ body {
 }
 
 .company-logos div:last-child img {
-  height: 2rem;
+  height: 2.4rem;
 }
 
 .company-logos img:hover {
@@ -264,7 +265,6 @@ body {
 .underline {
   width: 120px;
   padding: .1px 0.5rem;
-  text-align: center;
   background-color: var(--brand-light-medium-gray);
 }
 
