@@ -57,6 +57,11 @@ body {
   letter-spacing: 2px;
 }
 
+.heading-tertiary {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
 .btn:link, .btn:visited {
   display: inline-block;
   color: var(--brand-light-gray);
@@ -157,7 +162,7 @@ body {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/hero-background.jpg');
   background-size: cover;
   box-shadow: inset 0 0 5rem rgba(255, 255, 255, 255);
-  background-blend-mode: overlay;
+  /* background-blend-mode: overlay; */
   padding: 12rem 0 10rem 0;
   margin-bottom: 4rem;
 }
@@ -240,6 +245,7 @@ body {
 
 .company-logos {
   max-width: 80%;
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 6rem;
@@ -264,6 +270,7 @@ body {
 
 .underline {
   width: 120px;
+  margin-top: .5rem;
   padding: .1px 0.5rem;
   background-color: var(--brand-light-medium-gray);
 }
