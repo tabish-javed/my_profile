@@ -241,16 +241,19 @@ body {
   max-width: 80%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 7rem;
+  gap: 6rem;
   align-items: end;
-  justify-items: space-between;
 }
 
 .company-logos img {
-  width: 7rem;
+  height: 3rem;
   padding: .2rem;
   filter: grayscale(100%);
   transition: all .2s;
+}
+
+.company-logos div:last-child img {
+  height: 2rem;
 }
 
 .company-logos img:hover {
