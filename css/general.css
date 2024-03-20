@@ -93,7 +93,7 @@ body {
 .btn-cv:hover, .btn-cv:active {
   color: var(--brand-light-gray);
   background-color: var(--brand-color-medium);
-  box-shadow: 0 0 0 0;
+  box-shadow: var(--brand-default-shadow);
 }
 
 .icon {
