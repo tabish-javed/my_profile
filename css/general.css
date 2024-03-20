@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&display=swap');
+
+:root {
+  --brand-font: 'M PLUS Code Latin', sans-serif;
+  --brnad-font-size: 1.6rem;
+  --brand-color-dark: #2b8a3e;
+  --brand-color-medium: #37b24d;
+  --brand-color-light: #d3f9d8;
+  --brand-font-color: #495057;
+  --brand-light-gray: #dee2e6;
+  --brand-light-medium-gray: #ced4da;
+  --brand-medium-gray: #adb5bd;
+  --brand-default-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* reset default font size to 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--brand-font);
+  color: var(--brand-font-color);
+}
+
+/* ---- GENERAL REUSABLE ---- */
+.section {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-bottom: 8rem;
+}
+
+.heading-primary {
+  font-size: 6rem;
+  letter-spacing: 2px;
+  text-shadow: var(--brand-default-shadow);
+}
+
+.heading-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.heading-tertiary {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.btn:link, .btn:visited {
+  display: inline-block;
+  color: var(--brand-light-gray);
+  background-color: var(--brand-color-dark);
+  text-decoration: none;
+  font-size: var(--brnad-font-size);
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  transition: all .2s;
+}
+
+.btn:hover, .btn:active {
+  background-color: var(--brand-color-medium);
+  transform: translateY(-3px);
+  box-shadow: var(--brand-default-shadow);
+}
+
+.btn-cv:link, .btn-cv:visited {
+  margin-left: 2rem;
+  background-color: transparent;
+  color: var(--brand-font-color);
+  letter-spacing: 1px;
+  box-shadow: inset 0 0 0 3px var(--brand-medium-gray);
+  transition: all .2s;
+}
+
+.btn-cv:hover, .btn-cv:active {
+  color: var(--brand-light-gray);
+  background-color: var(--brand-color-medium);
+  box-shadow: 0 0 0 0;
+}
+
+.icon {
+  width: 3.2rem;
+  fill: var(--brand-color-medium);
+}
