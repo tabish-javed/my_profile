@@ -124,9 +124,11 @@
 .quote {
   width: 4rem;
   height: 4rem;
-  fill: var(--brand-color-light);
+  /* fill: var(--brand-color-light); */
   position: absolute;
-  transform: skewX(-10deg) rotate(180deg) translate(6rem, 0rem);
+  transform: skewX(-10deg) rotate(180deg) translate(150%, 0%);
+  filter: grayscale(100%);
+  opacity: 20%;
 }
 
 /* ---- STRENGTH ---- */
@@ -153,8 +155,8 @@
   flex-direction: column;
 }
 
-.company {
-  max-width: 100%;
+.companies {
+  min-width: 100%;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -162,37 +164,49 @@
 .company-logos {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 6rem;
+  gap: 0rem;
   align-items: end;
-}
-
-.company-logos img {
-  height: 3rem;
-  padding: .2rem;
-  /* filter: grayscale(100%); */
-  transition: all .2s;
 }
 
 .company-logos div:last-child img {
   height: 2.4rem;
 }
 
-.company-logos div:first-child div {
-  background-color: var(--brand-color-dark);
-  font-weight: 500;
-  color: var(--brand-light-gray);
+.company-logo {
+  height: 3rem;
+  padding: .2rem 0.5rem;
+  filter: grayscale(100%);
+  opacity: 50%;
+  transition: all .2s;
 }
 
-.company-logos img:hover {
-  /* filter: grayscale(0%); */
+.company-logo {
+  filter: grayscale(100%);
+  opacity: 50%;
+}
+
+.company-logo:hover {
+  filter: grayscale(0%);
+  opacity: 100%;
   cursor: pointer;
 }
 
+.company-active .company-logo {
+  filter: grayscale(0%);
+  opacity: 100%;
+}
+
+.company-active .underline {
+  font-weight: 500;
+  color: var(--brand-light-gray);
+  background-color: var(--brand-color-dark);
+}
+
 .underline {
-  width: 120px;
+  width: 100%;
   margin-top: .5rem;
-  padding: .1px 0.5rem;
-  background-color: var(--brand-light-medium-gray);
+  padding: .1rem 0.5rem;
+  background-color: var(--brand-light-gray);
 }
 
 .company-rnr {

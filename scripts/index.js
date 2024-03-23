@@ -2,8 +2,11 @@
 
 const header = document.querySelector('.header')
 const navLinks = document.querySelectorAll('.nav-link')
+const companies = document.querySelectorAll('.company-logo')
+const underlines = document.querySelectorAll('.underline')
 
-function onScroll () {
+
+function onScrollNavBar () {
   window.addEventListener('scroll', () => {
     if (window.scrollY >= 2) {
       header.classList.add('scrolled')
@@ -26,4 +29,18 @@ function onScroll () {
   })
 }
 
-onScroll()
+
+function experienceAccordion () {
+  const companyLogos = document.querySelector('.company-logos')
+  companyLogos.addEventListener('click', (e) => {
+    const companies = document.querySelectorAll('.company-logo')
+
+    if (e.target.classList.contains('company-logo')) {
+      companies.forEach(company => company.closest('div').classList.remove('company-active'))
+      e.target.closest('div').classList.add('company-active')
+    }
+  })
+}
+
+onScrollNavBar()
+experienceAccordion()
