@@ -34,7 +34,7 @@ body {
 .section {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 8rem 2rem 2rem 2rem;
   margin-bottom: 8rem;
 }
 
