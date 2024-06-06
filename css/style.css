@@ -195,7 +195,7 @@
 .company-active .underline {
   font-weight: 500;
   color: var(--brand-light-gray);
-  background-color: var(--brand-color-dark);
+  background-color: var(--brand-color-medium);
   box-shadow: var(--brand-default-shadow);
 }
 
