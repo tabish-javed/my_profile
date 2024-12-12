@@ -33,9 +33,9 @@ body {
 /* ---- GENERAL REUSABLE ---- */
 .section {
   max-width: 120rem;
+  height: 60rem;
   margin: 0 auto;
-  padding: 8rem 2rem 2rem 2rem;
-  margin-bottom: 8rem;
+  padding: 6rem 2rem 4rem 2rem;
 }
 
 .heading-primary {
