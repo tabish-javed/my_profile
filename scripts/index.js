@@ -4,6 +4,7 @@ const header = document.querySelector('.header')
 const navLinks = document.querySelectorAll('.nav-link')
 const companies = document.querySelectorAll('.company-logo')
 const companyRnRs = document.querySelectorAll('.company-rnr')
+const copyright = document.querySelector(".copyright")
 
 // Helpers
 /**
@@ -58,6 +59,8 @@ function experienceAccordion () {
     }
   })
 }
+
+copyright.innerHTML = `&copy; <strong>${ new Date().getFullYear() }</strong> TABISH JAVED`
 
 onScrollNavBar()
 experienceAccordion()
